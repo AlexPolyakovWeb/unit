@@ -1,0 +1,267 @@
+.header {
+  position: relative;
+  @include bg-image ("./../img/main-images/header-images/header-full-hd.jpg");
+
+  &::before {
+    @extend %overlay;
+  }
+}
+
+.header__content {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 99;
+
+  @media (max-width: 1199px) {
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 899px) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: 599px) {
+    padding-bottom: 40px;
+  }
+}
+
+// navigation------
+.header__navigation {
+  margin-bottom: 140px;
+  display: flex;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 899px) {
+    margin-bottom: 30px;
+  }
+}
+
+.btn-nav {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-nav--fixed {
+  position: fixed;
+}
+
+.btn-nav:hover {
+  background-color: #00C470;
+}
+
+// headline------
+.header__headline {
+  margin-bottom: 148px;
+  text-align: center;
+  color: #ffffff;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 129px;
+  }
+
+  @media (max-width: 899px) {
+    max-width: 370px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 599px) {
+    margin-bottom: 50px;
+  }
+}
+
+.header__title {
+  margin-bottom: 40px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: 899px) {
+    margin-bottom: 30px;
+  }
+}
+
+.title-h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1;
+
+  @media (max-width: 1199px) {
+    font-size: 84px;
+  }
+
+  @media (max-width: 899px) {
+    font-size: 70px;
+  }
+}
+
+.header__description {
+  max-width: 730px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+
+  p + p {
+    margin-top: 15px;
+  }
+
+  @media (max-width: 1199px) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 599px) {
+    margin-bottom: 30px;
+  }
+}
+
+.header-description {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+
+  @media (max-width: 1199px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 899px) {
+    font-size: 16px;
+  }
+}
+
+// form------
+.form {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 20px;
+
+  @media (max-width: 899px) {
+    width: 370px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  @media (max-width: 599px) {
+    width: 100%;
+  }
+}
+
+.input {
+  padding: 22px 32px;
+  width: 240px;
+  height: 60px;
+
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.75);
+
+  font-weight: 700;
+  line-height: 0.17;
+
+  color: #FFFFFF;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: none;
+  }
+
+  &:focus {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+
+  &:active {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+
+  @media (max-width: 899px) {
+    width: 100%;
+  }
+}
+
+.form button {
+  width: 240px;
+
+  @media (max-width: 1199px) {
+    width: 100%;
+  }
+}
+
+.button {
+  padding: 22px 32px;
+  height: 60px;
+
+  border: none;
+  background: #00C470;
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 0.17%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: none;
+  }
+
+  &:focus {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+}
+
+.form__button-link {
+  display: inline-block;
+  text-decoration: none;
+  line-height: inherit;
+
+  @media (max-width: 899px) {
+    width: 100%;
+  }
+}
+
+// scroll------
+.header__scroll {
+  text-align: center;
+}
+
+.header__scroll a {
+  display: inline-block;
+
+}
+
+.header__icon-scroll {
+  fill: #FFFFFF;
+}
+
+.header__icon-scroll {
+  &:hover {
+    fill: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: none;
+  }
+}

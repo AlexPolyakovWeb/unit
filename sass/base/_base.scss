@@ -1,0 +1,137 @@
+
+html {
+  /* sticky footer */
+  height: 100%;
+  // slow scroll
+  scroll-behavior: smooth;
+}
+
+// font-family: 'Montserrat',
+// sans-serif;
+
+/* Sticky Footer */
+
+body {
+  height: 100%;
+
+  /* sticky footer */
+  display: flex;
+  /* sticky footer */
+  flex-direction: column;
+  /* sticky footer */
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+body>* {
+  flex-shrink: 0;
+  /* sticky footer */
+}
+
+.footer {
+  /* sticky footer */
+  margin-top: auto;
+}
+
+/* Utility */
+
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Reset and base styles  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  padding: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Grid styles */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (max-width: 1199px) {
+    width: 900px;
+    padding: 0 15px;
+  }
+
+  @media (max-width: 899px) {
+    width: 600px;
+    padding: 0 15px;
+  }
+
+  @media (max-width: 599px) {
+    width: 320px;
+    padding: 0 15px;
+  }
+}
+
+
+
+
+
+
+

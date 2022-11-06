@@ -1,0 +1,94 @@
+.section-focus {
+  @media (max-width: 899px) {
+    overflow-x: hidden;
+  }
+}
+
+.section-focus__row {
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media (max-width: 899px) {
+    flex-direction: row;
+  }
+
+  @media (max-width: 599px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+// header
+.section-focus__header {
+  margin-bottom: 30px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 599px) {
+    margin-bottom: 10px;
+  }
+}
+
+.section-focus__title-h3 {
+  margin-bottom: 30px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 599px) {
+    margin-bottom: 10px;
+  }
+}
+
+// content
+.section-focus__content {
+  padding-top: 28px;
+  width: 470px;
+
+  @media (max-width: 1199px) {
+    padding-top: 20px;
+    width: 420px;
+    margin-left: auto;
+  }
+
+  @media (max-width: 899px) {
+    width: 370px;
+  }
+
+  @media (max-width: 599px) {
+    width: 290px;
+     text-align: center;
+  }
+}
+
+// image
+.section-focus__image {
+  margin-right: auto;
+
+  @media (max-width: 1199px) {
+    width: 420px;
+  }
+
+  @media (max-width: 899px) {
+    // задаём ширину по макету
+    width: 170px;
+
+    img {
+      // отменяем ширину 100%
+      max-width: unset;
+      // задаём ширину по макету
+      width: 415px;
+    }
+  }
+
+  @media (max-width: 599px) {
+    width: 290px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

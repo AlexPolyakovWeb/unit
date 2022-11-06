@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <!-- encoding -->
+  <meta charset="UTF-8" />
+  <!-- Mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title and SEO -->
+  <title>ЮНИТ</title>
+  <meta name="description" content="ЮНИТ — сервис для управления проектами" />
+  <meta name="keywords"
+    content="Контроль бюджета, статистика и графики, голосовое управление, выберите подходящий план, о нас, блог, контакты" />
+
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="./libs/owlCarusel-2/assets/owl.carousel.min.css">
+
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_package_v0.16/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_package_v0.16/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_package_v0.16/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon_package_v0.16/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon_package_v0.16/safari-pinned-tab.svg">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- <link rel="stylesheet" href="./css/media.css" /> -->
+
+  <!-- Open Graph -->
+  <meta property="og:url" content="http://j33366zt.beget.tech/unit-project/unit/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Юнит онлайн-сервис управления проектами" />
+  <meta property="og:description" content="Онлайн управление проектами" />
+  <meta property="og:image" content="./img/opengraf/main.jpg" />
+</head>
+
+<body>
+  <!-- svg sprite -->
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- header icon mouse -->
+    <symbol id="icon-mouse" viewBox="0 0 32 48">
+      <path
+        d="M17.324 0H14.67C6.41698 0.618 -0.00201416 7.06802 -0.00201416 14.817V33.071C-1.41601e-05 41.3 7.176 48 16 48C24.824 48 32 41.3 32 33.069V14.811C32 7.06797 25.58 0.617 17.324 0ZM29 32.868C29 39.553 23.167 44.987 16 44.987C8.833 44.987 3 39.553 3 32.868V15.1C3 8.41698 8.832 2.98199 16 2.98199C23.168 2.98199 29 8.41698 29 15.1V32.865V32.868ZM16 13C15.7394 12.9975 15.4809 13.0464 15.2393 13.144C14.9977 13.2415 14.7776 13.3858 14.5919 13.5685C14.4061 13.7513 14.2582 13.9688 14.1566 14.2088C14.0551 14.4488 14.0018 14.7064 14 14.967V20.033C14.0321 20.5406 14.2564 21.0168 14.6272 21.3648C14.998 21.7129 15.4874 21.9066 15.996 21.9066C16.5045 21.9066 16.994 21.7129 17.3648 21.3648C17.7356 21.0168 17.9599 20.5406 17.992 20.033V14.967C17.988 14.4422 17.7761 13.9404 17.4026 13.5717C17.0292 13.2029 16.5248 12.9973 16 13Z" />
+    </symbol>
+
+    <!-- footer icon twitter -->
+    <symbol id="twitter" viewBox="0 0 24 24">
+      <path
+        d="M22 5.79997C21.2483 6.12606 20.4534 6.34163 19.64 6.43997C20.4982 5.92729 21.1413 5.12075 21.45 4.16997C20.6436 4.65003 19.7608 4.98826 18.84 5.16997C18.2245 4.50254 17.405 4.05826 16.5098 3.90682C15.6147 3.75537 14.6945 3.90532 13.8938 4.33315C13.093 4.76099 12.4569 5.4425 12.0852 6.2708C11.7135 7.09911 11.6273 8.02736 11.84 8.90997C10.2094 8.82749 8.61444 8.40292 7.15865 7.66383C5.70287 6.92474 4.41885 5.88766 3.39 4.61997C3.02914 5.25013 2.83952 5.96379 2.84 6.68997C2.83872 7.36435 3.00422 8.02858 3.32176 8.62353C3.63929 9.21848 4.09902 9.72568 4.66 10.1C4.00798 10.0822 3.36989 9.90726 2.8 9.58997V9.63997C2.80489 10.5849 3.13599 11.4991 3.73731 12.2279C4.33864 12.9568 5.17326 13.4556 6.1 13.64C5.74326 13.7485 5.37287 13.8058 5 13.81C4.74189 13.807 4.48442 13.7835 4.23 13.74C4.49391 14.5528 5.00462 15.2631 5.69107 15.7721C6.37753 16.2811 7.20558 16.5635 8.06 16.58C6.6172 17.7152 4.83588 18.3348 3 18.34C2.66574 18.3411 2.33174 18.321 2 18.28C3.87443 19.4902 6.05881 20.1327 8.29 20.13C9.82969 20.146 11.3571 19.855 12.7831 19.274C14.2091 18.6931 15.505 17.8338 16.5952 16.7465C17.6854 15.6591 18.548 14.3654 19.1326 12.9409C19.7172 11.5164 20.012 9.98969 20 8.44997C20 8.27996 20 8.09997 20 7.91997C20.7847 7.33478 21.4615 6.61739 22 5.79997Z"
+        fill="white" />
+    </symbol>
+
+    <!-- footer icon facebook -->
+    <symbol id="facebook" viewBox="0 0 24 24">
+      <path
+        d="M15.12 5.32003H17V2.14003C16.0897 2.04538 15.1751 1.99865 14.26 2.00003C11.54 2.00003 9.67999 3.66003 9.67999 6.70003V9.32003H6.60999V12.88H9.67999V22H13.36V12.88H16.42L16.88 9.32003H13.36V7.05003C13.36 6.00003 13.64 5.32003 15.12 5.32003Z"
+        fill="white" />
+    </symbol>
+
+    <!-- footer icon instagram -->
+    <symbol id="instagram" viewBox="0 0 24 24">
+      <path
+        d="M17.34 5.46C17.1027 5.46 16.8707 5.53038 16.6733 5.66224C16.476 5.79409 16.3222 5.98151 16.2313 6.20078C16.1405 6.42005 16.1168 6.66133 16.1631 6.89411C16.2094 7.12689 16.3236 7.34071 16.4915 7.50853C16.6593 7.67635 16.8731 7.79064 17.1059 7.83694C17.3387 7.88324 17.5799 7.85948 17.7992 7.76866C18.0185 7.67783 18.2059 7.52402 18.3378 7.32668C18.4696 7.12935 18.54 6.89734 18.54 6.66C18.54 6.34174 18.4136 6.03652 18.1885 5.81147C17.9635 5.58643 17.6583 5.46 17.34 5.46ZM21.94 7.88C21.9206 7.0503 21.7652 6.2294 21.48 5.45C21.2257 4.78313 20.83 4.17928 20.32 3.68C19.8248 3.16743 19.2196 2.77418 18.55 2.53C17.7727 2.23616 16.9508 2.07721 16.12 2.06C15.06 2 14.72 2 12 2C9.28 2 8.94 2 7.88 2.06C7.04915 2.07721 6.22734 2.23616 5.45 2.53C4.78168 2.77665 4.17693 3.16956 3.68 3.68C3.16743 4.17518 2.77418 4.78044 2.53 5.45C2.23616 6.22734 2.07721 7.04915 2.06 7.88C2 8.94 2 9.28 2 12C2 14.72 2 15.06 2.06 16.12C2.07721 16.9508 2.23616 17.7727 2.53 18.55C2.77418 19.2196 3.16743 19.8248 3.68 20.32C4.17693 20.8304 4.78168 21.2234 5.45 21.47C6.22734 21.7638 7.04915 21.9228 7.88 21.94C8.94 22 9.28 22 12 22C14.72 22 15.06 22 16.12 21.94C16.9508 21.9228 17.7727 21.7638 18.55 21.47C19.2196 21.2258 19.8248 20.8326 20.32 20.32C20.8322 19.8226 21.2283 19.2182 21.48 18.55C21.7652 17.7706 21.9206 16.9497 21.94 16.12C21.94 15.06 22 14.72 22 12C22 9.28 22 8.94 21.94 7.88ZM20.14 16C20.1327 16.6348 20.0178 17.2637 19.8 17.86C19.6403 18.2952 19.3839 18.6884 19.05 19.01C18.7256 19.3405 18.3332 19.5964 17.9 19.76C17.3037 19.9778 16.6748 20.0927 16.04 20.1C15.04 20.15 14.67 20.16 12.04 20.16C9.41 20.16 9.04 20.16 8.04 20.1C7.38089 20.1123 6.72459 20.0109 6.1 19.8C5.68578 19.6281 5.31136 19.3728 5 19.05C4.66809 18.7287 4.41484 18.3352 4.26 17.9C4.01586 17.2952 3.88044 16.6519 3.86 16C3.86 15 3.8 14.63 3.8 12C3.8 9.37 3.8 9 3.86 8C3.86448 7.35106 3.98295 6.70795 4.21 6.1C4.38605 5.67791 4.65627 5.30166 5 5C5.30381 4.65617 5.67929 4.3831 6.1 4.2C6.70955 3.98004 7.352 3.86508 8 3.86C9 3.86 9.37 3.8 12 3.8C14.63 3.8 15 3.8 16 3.86C16.6348 3.86728 17.2637 3.98225 17.86 4.2C18.3144 4.36865 18.7223 4.64285 19.05 5C19.3777 5.30718 19.6338 5.68273 19.8 6.1C20.0223 6.70893 20.1373 7.35178 20.14 8C20.19 9 20.2 9.37 20.2 12C20.2 14.63 20.19 15 20.14 16ZM12 6.87C10.9858 6.87198 9.99496 7.17453 9.15265 7.73942C8.31035 8.30431 7.65438 9.1062 7.26763 10.0438C6.88089 10.9813 6.78072 12.0125 6.97979 13.0069C7.17886 14.0014 7.66824 14.9145 8.38608 15.631C9.10392 16.3474 10.018 16.835 11.0129 17.0321C12.0077 17.2293 13.0387 17.1271 13.9755 16.7385C14.9123 16.35 15.7129 15.6924 16.2761 14.849C16.8394 14.0056 17.14 13.0142 17.14 12C17.1413 11.3251 17.0092 10.6566 16.7512 10.033C16.4933 9.40931 16.1146 8.84281 15.6369 8.36605C15.1592 7.88929 14.5919 7.51168 13.9678 7.25493C13.3436 6.99818 12.6749 6.86736 12 6.87ZM12 15.33C11.3414 15.33 10.6976 15.1347 10.15 14.7688C9.60234 14.4029 9.17552 13.8828 8.92348 13.2743C8.67144 12.6659 8.6055 11.9963 8.73398 11.3503C8.86247 10.7044 9.17963 10.111 9.64533 9.64533C10.111 9.17963 10.7044 8.86247 11.3503 8.73398C11.9963 8.6055 12.6659 8.67144 13.2743 8.92348C13.8828 9.17552 14.4029 9.60234 14.7688 10.15C15.1347 10.6976 15.33 11.3414 15.33 12C15.33 12.4373 15.2439 12.8703 15.0765 13.2743C14.9092 13.6784 14.6639 14.0454 14.3547 14.3547C14.0454 14.6639 13.6784 14.9092 13.2743 15.0765C12.8703 15.2439 12.4373 15.33 12 15.33Z"
+        fill="white" />
+    </symbol>
+
+    <!-- footer icon vk -->
+    <symbol id="vk" viewBox="0 0 24 24">
+      <path
+        d="M15.0729 2H8.9375C3.33331 2 2 3.33331 2 8.92706V15.0625C2 20.6666 3.32294 22 8.92706 22H15.0625C20.6667 22 22 20.6771 22 15.0729V8.9375C22 3.33331 20.6771 2 15.0729 2ZM18.1458 16.2708H16.6875C16.1354 16.2708 15.9688 15.8229 14.9792 14.8333C14.1146 14 13.75 13.8958 13.5312 13.8958C13.2292 13.8958 13.1458 13.9791 13.1458 14.3958V15.7083C13.1458 16.0625 13.0312 16.2708 12.1042 16.2708C11.2046 16.2104 10.3322 15.9371 9.55888 15.4735C8.78557 15.0098 8.13346 14.3691 7.65625 13.6041C6.52336 12.194 5.73511 10.5391 5.35419 8.77081C5.35419 8.55206 5.4375 8.35413 5.85419 8.35413H7.3125C7.6875 8.35413 7.82294 8.52081 7.96875 8.90625C8.67706 10.9896 9.88544 12.8021 10.375 12.8021C10.5625 12.8021 10.6458 12.7188 10.6458 12.25V10.1041C10.5833 9.125 10.0625 9.04163 10.0625 8.6875C10.0694 8.59407 10.1124 8.50699 10.1824 8.44475C10.2524 8.3825 10.3439 8.35 10.4375 8.35413H12.7292C13.0417 8.35413 13.1458 8.51038 13.1458 8.88538V11.7812C13.1458 12.0938 13.2812 12.1979 13.375 12.1979C13.5625 12.1979 13.7083 12.0938 14.0521 11.75C14.7907 10.8492 15.3943 9.84559 15.8438 8.77081C15.8896 8.64149 15.9766 8.53074 16.0913 8.4555C16.2061 8.38025 16.3423 8.34465 16.4792 8.35413H17.9375C18.375 8.35413 18.4688 8.57288 18.375 8.88538C17.8444 10.0737 17.1878 11.2017 16.4167 12.25C16.2604 12.4896 16.1979 12.6146 16.4167 12.8958C16.5625 13.1146 17.0729 13.5416 17.4167 13.9479C17.9167 14.4466 18.3318 15.0237 18.6458 15.6562C18.7708 16.0625 18.5625 16.2708 18.1458 16.2708Z"
+        fill="white" />
+    </symbol>
+  </svg>
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__content">
+
+      <!-- mobile navigation -->
+      <div class="mb-navigation">
+        <div class="mb-navigation__title">
+          <h3 class="title-h3 title-h3--color">навигация по сайту</h3>
+        </div>
+        <nav class="nav">
+          <a href="#functional" class="nav__item nav-item" data-nav="">Функционал</a>
+          <a href="#control" class="nav__item nav-item" data-nav>Гибкое управление</a>
+          <a href="#focus" class="nav__item nav-item" data-nav>Всегда в фокусе</a>
+          <a href="#price" class="nav__item nav-item" data-nav>Цены</a>
+          <a href="#reviews" class="nav__item nav-item" data-nav>Отзывы клиентов</a>
+        </nav>
+      </div>
+
+      <div class="container">
+        <!-- Nav -->
+        <nav class="header__navigation navigation">
+          <button class="btn-nav">
+            <div class="icon-menu">
+              <div class="icon-menu__item"></div>
+            </div>
+            <!-- <img src="./img/main-images/header-images/icon-menu-burger.svg" alt="Button navigation"> -->
+          </button>
+
+          <form class="header__form" action="#!">
+            <input class="header__input" type="text" class="header__input" placeholder="Введите текст для поиска">
+            <button class="btn-nav-search">
+              <svg width="20" height="20">
+                <!-- <use href="#icon-search"></use> -->
+                <g class="btn-nav-search-icon">
+                  <path fill="none"
+                    d="M7.70001 13.2C10.7376 13.2 13.2 10.7375 13.2 7.69995C13.2 4.66239 10.7376 2.19995 7.70001 2.19995C4.66245 2.19995 2.20001 4.66239 2.20001 7.69995C2.20001 10.7375 4.66245 13.2 7.70001 13.2Z"
+                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.8 18.4L11.2 12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+              <!-- <img src="./img/main-images/header-images/icon-search.svg" alt="Button search"> -->
+            </button>
+          </form>
+
+        </nav>
+
+        <!-- Headline -->
+        <div class="header__headline">
+          <div class="header__title">
+            <h1 class="title-h1">ЮНИТ</h1>
+          </div>
+          <div class="header__description">
+            <p class="header-description">Управляй задачами и проектами из любой точки вместе с
+              ЮНИТ.
+              Дома. На работе. В дороге. Онлайн. Оффлайн.
+            </p>
+          </div>
+
+          <!-- Form -->
+          <form class="form" action="#!" method="post">
+            <input class="input" type="text" placeholder="Ваше имя">
+            <input class="input" type="email" placeholder="Email">
+            <!-- button -->
+            <a class="form__button-link button" href="#price" type="submit">начать триал</a>
+          </form>
+        </div>
+        <!-- /header__headline -->
+
+        <!-- Scroll -->
+        <div class="header__scroll">
+          <a href="#main">
+            <svg class="header__icon-scroll" width="32" height="48">
+              <use href="#icon-mouse"></use>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /header__content -->
+  </header>
+
+  <!-- Main -->
+  <main class="main" id="main">
+
+    <!-- Functional -->
+    <section id="functional" class="section-functional section ">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-functional__title-h3">
+            <h3 class="title-h3 title-h3--color">функционал</h3>
+          </div>
+          <div class="section-functional__title-h2">
+            <h2 class="title-h2">Получайте больше</h2>
+          </div>
+        </div>
+
+        <!-- Row cards -->
+        <div class="section-functional__row">
+          <!-- card -->
+          <div class="card">
+            <img class="card__icon" src="./img/main-images/main-images/bullet-file-check-alt.svg"
+              alt="bullet file check">
+            <div class="card__title-h4">
+              <h4 class="title-h4">Создан для управления</h4>
+            </div>
+            <div class="card__description">
+              <p class="description ">
+                Согласно ставшей уже классической работе Филипа Котлера, рекламная площадка отталкивает рейтинг.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- /card -->
+          <div class=" card">
+            <img class="card__icon" src="./img/main-images/main-images/bullet-microphone.svg" alt="bullet microphone">
+            <div class="card__title-h4">
+              <h4 class="title-h4">Голосовое управление</h4>
+            </div>
+            <p class="card__description  description ">
+              Согласно ставшей уже классической работе Филипа Котлера, рекламная площадка отталкивает рейтинг.
+            </p>
+          </div>
+          <!-- /card -->
+
+          <div class="card">
+            <img class="card__icon" src="./img/main-images/main-images/bullet-money-stack.svg" alt="bullet file check">
+            <div class="card__title-h4">
+              <h4 class="title-h4">Контроль бюджета</h4>
+            </div>
+            <p class="card__description  description ">
+              Согласно ставшей уже классической работе Филипа Котлера, рекламная площадка отталкивает рейтинг.
+            </p>
+          </div>
+          <!-- /card -->
+
+          <div class="card">
+            <img class="card__icon" src="./img/main-images/main-images/bullet-chart-pie-alt.svg" alt="bullet chart pie">
+            <div class="card__title-h4">
+              <h4 class="title-h4">Статистика и графики</h4>
+            </div>
+            <p class="card__description  description ">
+              Статистика и графики
+              Согласно ставшей уже классической работе Филипа Котлера, рекламная площадка отталкивает рейтинг.
+            </p>
+          </div>
+          <!-- /card -->
+        </div>
+      </div>
+      <!-- /container -->
+    </section>
+    <!-- /Section functional -->
+
+    <!-- CTA -->
+    <section class="section-cta section">
+      <!-- Title h2 visually-hidden -->
+      <h2 class="section-cta__title-h2 visually-hidden">Выгодное предложение</h2>
+      <div class="container">
+        <div class="section-cta__content">
+          <p class="section-cta__description description description--cta">
+            Начните использовать <span>ЮНИТ</span> уже сегодня.
+          </p>
+          <!-- button -->
+          <a class="section-cta__button-link button" href="#price">подключить
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- /Section cta -->
+
+    <!-- Control  -->
+    <section id="control" class="section-control section">
+      <div class="section-control-container container">
+        <!-- row -->
+        <div class="section-control__row">
+          <div class="section-control__content">
+            <div class="section-control__header">
+              <div class="section-control__title-h3">
+                <h3 class="title-h3 title-h3--color">гибкое управление</h3>
+              </div>
+              <div class="section-control__title-h2">
+                <h2 class="title-h2">Задачи и подзадачи</h2>
+              </div>
+            </div>
+            <div class="section-control__description">
+              <p class="description">Тактика выстраивания отношений с коммерчекими
+                агентами,
+                вопреки мнению П.Друкера, искажает продвигаемый отраслевой
+                стандарт. Стратегический рыночный план традиционно масштабирует комплексный имидж. Спонсорство развивает
+                формат события.
+              </p>
+            </div>
+
+          </div>
+
+          <div class=" section-control__image">
+            <picture>
+              <source srcset="./img/main-images/main-images/tablet-mockup-iphone.jpg" media="(max-width:599px)">
+              <source srcset="./img/main-images/main-images/tablet-mockup-iphone.jpg" media="(max-width:899px)">
+              <source srcset="./img/main-images/main-images/tablet-mockup-iphone.jpg" media="(max-width:1199px)">
+              <img src="./img/main-images/main-images/mockup-iphone.jpg" alt="iphone X">
+            </picture>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- /section-control-container -->
+    </section>
+    <!-- /Section-control -->
+
+    <!-- Focus -->
+    <section id="focus" class="section-focus section">
+      <div class="container">
+        <!-- row -->
+        <div class="section-focus__row">
+          <div class="section-focus__content">
+            <div class="section-focus__header">
+              <div class="section-focus__title-h3">
+                <h3 class="title-h3 title-h3--color">всегда в фокусе</h3>
+              </div>
+              <div class="section-focus__title-h2">
+                <h2 class="title-h2">Множественные приоритеты</h2>
+              </div>
+            </div>
+            <!-- /section-focus__header -->
+
+            <div class="section-focus__description">
+              <p class="description ">Потребление существенно продуцирует рыночный
+                традиционный
+                канал. В соответствии с законом Ципфа, маркетинг основан на
+                тщательном анализе данных. Наряду с этим, целевой трафик конкурентоспособен.
+              </p>
+            </div>
+
+          </div>
+          <!-- /section-focus__content -->
+
+          <div class="section-focus__image">
+            <picture>
+              <source srcset="./img/main-images/main-images/xs-mobile-mockup-ipad.jpg" media="(max-width:599px)">
+              <source srcset="./img/main-images/main-images/mobile-mockup-ipad.jpg" media="(max-width:899px)">
+              <source srcset="./img/main-images/main-images/tablet-mockup-ipad.jpg" media="(max-width:1199px)">
+              <img src="./img/main-images/main-images/mockup-ipad.jpg" alt="ipad">
+            </picture>
+          </div>
+
+        </div>
+      </div>
+      <!-- /section-control-container -->
+    </section>
+    <!-- /Section function -->
+
+    <!-- Price -->
+    <section id="price" class="section-price section section--price">
+      <div class="section-price__content">
+        <div class="container">
+
+          <!-- header -->
+          <div class="section-price__header">
+            <div class="section-price__title-h3">
+              <h3 class="title-h3 title-h3--color-wht">цены</h3>
+            </div>
+            <div class="section-price__title-h2">
+              <h2 class="title-h2 title-h2--color-wht">Выберите подходящий план</h2>
+            </div>
+          </div>
+
+          <!-- cards row -->
+          <div class="section-price__cards cards">
+            <!-- card -->
+            <div class="section-price__card card-price">
+              <div class="card-price__header">
+                <div class="card-price__title-h3">
+                  <h3 class="title-h3 title-h3--color-gray">базовый</h3>
+                </div>
+                <div class="card-price__price">15</div>
+                <div class="card-price__period">$/мес</div>
+              </div>
+              <ul class="card-price__list">
+                <li>10 проектов</li>
+                <li>5 участников</li>
+                <li>∞ количество задач</li>
+                <li>5 GB медиа хранилище</li>
+                <li>Поддержка по Email</li>
+              </ul>
+              <div class="card-price__button">
+                <button class="button button--overlay">выбрать</button>
+              </div>
+            </div>
+            <!-- /card -->
+
+            <div class="section-price__card card-price card-price--color">
+              <div class="card-price__header">
+                <div class="card-price__title-h3">
+                  <h3 class="title-h3 title-h3--color-gray">базовый</h3>
+                </div>
+                <div class="card-price__price">65</div>
+                <div class="card-price__period">$/мес</div>
+              </div>
+              <ul class="card-price__list">
+                <li>50 проектов</li>
+                <li>10 участников</li>
+                <li>∞ количество задач</li>
+                <li>25 GB медиа хранилище</li>
+                <li>Поддержка по Email</li>
+              </ul>
+              <div class="card-price__button">
+                <button class="button button--fill">выбрать</button>
+              </div>
+            </div>
+            <!-- /card -->
+
+            <div class="section-price__card card-price">
+              <div class="card-price__header">
+                <div class="card-price__title-h3">
+                  <h3 class="title-h3 title-h3--color-gray">базовый</h3>
+                </div>
+                <div class="card-price__price">125</div>
+                <div class="card-price__period">$/мес</div>
+              </div>
+              <ul class="card-price__list">
+                <li>100 проектов</li>
+                <li>30 участников</li>
+                <li>∞ количество задач</li>
+                <li>50 GB медиа хранилище</li>
+                <li>Поддержка по Email</li>
+              </ul>
+              <div class="card-price__button">
+                <button class="button button--overlay">выбрать</button>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+          <!-- /section-price__cards cards -->
+        </div>
+        <!-- /container -->
+      </div>
+      <!-- /section-price__content -->
+    </section>
+    <!-- /Section price -->
+
+    <!-- Slider  -->
+    <section id="reviews" class="section-slider section">
+      <div class="container">
+
+        <!-- header -->
+        <div class="section-slider__header">
+          <div class="section-slider__title-h3">
+            <h3 class="title-h3 title-h3--color">наши клиенты</h3>
+          </div>
+          <div class="section-slider__title-h2">
+            <h2 class="title-h2">Что говорят пользователи</h2>
+          </div>
+        </div>
+
+
+
+        <div class="slider-wr">
+          <!-- button -->
+          <button class="slider__button slider__button--left" data-next>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g class="slider__button-svg">
+                <path d="M20 12H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 18L4 12L10 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+
+            </svg>
+            <!-- <img class="slider__icon-button" src="./img/main-images/main-images/arrow-left.svg"
+              alt="Button slider left"> -->
+          </button>
+
+          <!-- button -->
+          <button class="slider__button slider__button--right" data-prev>
+
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g class="slider__button-svg">
+                <path d="M4 12H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14 6L20 12L14 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+
+            </svg>
+            <!-- <img class="slider__icon-button" src="./img/main-images/main-images/arrow-right.svg"
+              alt="Button slider right"> -->
+          </button>
+
+          <!-- slider -->
+          <div id="slider" class="slider owl-carousel owl-theme">
+            <!-- slider item -->
+            <div class="slider__item">
+              <div class="slider__description-item">
+                <p class="description description--item-slid">Это потрясающее приложение которое помогло мне завершить
+                  все
+                  мои дела, и сделать
+                  дипломный проект раньше срока.</p>
+              </div>
+              <div class="slider__user-item">
+                <div class="slider__avatar-user">
+                  <img src="./img/main-images/main-images/user-1.jpg" alt="User image" class="item-slid__image-user">
+                </div>
+                <div class="slider__info-user">
+                  <p class="slider__professional-user">Фрилансер</p>
+                  <p class="slider__name-user">Николай Остапов</p>
+                </div>
+
+              </div>
+            </div>
+            <!-- /slider item -->
+            <div class="slider__item">
+              <div class="slider__description-item">
+                <p class="description description--item-slid">Это приложение которое помогает мне экономить время
+                  и всегда сдавать проекты в срок, радуя моих клиентов и мою команду.</p>
+              </div>
+              <div class="slider__user-item">
+                <div class="slider__avatar-user">
+                  <img src="./img/main-images/main-images/user-2.jpg" alt="User image" class="item-slid__image-user">
+                </div>
+                <div class="slider__info-user">
+                  <p class="slider__professional-user">Фрилансер</p>
+                  <p class="slider__name-user">Лиза Ладо</p>
+                </div>
+
+              </div>
+            </div>
+            <!-- /slider item -->
+            <div class="slider__item">
+              <div class="slider__description-item">
+                <p class="description description--item-slid">Благодаря ЮНИТ у меня появилось время для занятия спортом
+                  при этом продуктивно делая свою работу в несколько раз.</p>
+              </div>
+              <div class="slider__user-item">
+                <div class="slider__avatar-user">
+                  <img src="./img/main-images/main-images/user-3.jpg" alt="User image" class="item-slid__image-user">
+                </div>
+                <div class="slider__info-user">
+                  <p class="slider__professional-user">Фрилансер</p>
+                  <p class="slider__name-user">Вера Солодова</p>
+                </div>
+
+              </div>
+            </div>
+            <!-- /slider item -->
+            <div class="slider__item">
+              <div class="slider__description-item">
+                <p class="description description--item-slid">Вместе с ЮНИТ удобно контролировать задачи и
+                  организовывать работу команды. ЮНИТ это современное решение для современных людей.</p>
+              </div>
+              <div class="slider__user-item">
+                <div class="slider__avatar-user">
+                  <img src="./img/main-images/main-images/user-4.jpg" alt="User image" class="item-slid__image-user">
+                </div>
+                <div class="slider__info-user">
+                  <p class="slider__professional-user">Фрилансер</p>
+                  <p class="slider__name-user">Алекс Пол</p>
+                </div>
+
+              </div>
+            </div>
+            <!-- /slider item -->
+          </div>
+        </div>
+        <!-- slider -->
+
+        <!-- /slider -->
+      </div>
+      <!-- /section-slider__slider -->
+      </div>
+    </section>
+    <!-- /Section slider -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="section-footer section--footer">
+    <div class="container">
+
+      <div class="section-footer__row">
+        <!-- navigation -->
+        <nav class="section-footer__nav">
+          <a class="section-footer__nav-item nav-item title-h3 title-h3--color-wht " href="#!">о нас</a>
+          <a class="section-footer__nav-item section-footer__nav-item--active title-h3 title-h3--color-wht"
+            href="#!">блог</a>
+          <a class="section-footer__nav-item nav-item title-h3 title-h3--color-wht" href="#!">контакты</a>
+        </nav>
+        <!-- /nav -->
+
+        <!-- social -->
+        <ul class="section-footer__social social-list">
+          <!-- twitter -->
+          <li class="social-list__item">
+            <a href="#!" class="social-list__icon-link">
+              <svg width="24" height="24">
+                <use href="#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <!-- facebook -->
+          <li class="social-list__item">
+            <a href="#!" class="social-list__icon-link">
+              <svg width="24" height="24">
+                <use href="#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <!-- instagram -->
+          <li class="social-list__item">
+            <a href="" class="social-list__icon-link">
+              <svg width="24" height="24">
+                <use href="#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <!-- vk -->
+          <li class="social-list__item">
+            <a href="" class="social-list__icon-link">
+              <svg width="24" height="24">
+                <use href="#vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- /section-footer__social -->
+      </div>
+      <!-- /section-footer__row -->
+      <div class="section-footer__copyright">
+        <p class="copyright">Копирайт © 2019 <span>ЮНИТ</span>. Все права защищены.</p>
+        <p class="developer">
+          <a href="https://alexweb.by/" class="developer__link" target="_blank">Разработка сайта Alexey_Polyakov</a>
+        </p>
+
+      </div>
+    </div>
+    <!-- /container -->
+  </footer>
+  <!-- /Footer -->
+  <script src="./libs/jquery-3.6.1.min.js"></script>
+  <script src="./libs/owlCarusel-2/owl.carousel.min.js"></script>
+  <script src="./owlCarusel-2.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

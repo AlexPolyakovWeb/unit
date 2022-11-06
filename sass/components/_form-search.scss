@@ -1,0 +1,90 @@
+.btn-nav-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  margin-left: auto;
+
+  &:hover {
+    background-color: #00C470;
+
+    .btn-nav-search-icon {
+      stroke: #ffffff;
+    }
+  }
+}
+
+.btn-nav-search-icon {
+  stroke: #000000;
+}
+
+// form------
+.header__form {
+  position: relative;
+  margin-left: auto;
+}
+
+.header__input {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 0px;
+  height: 60px;
+
+  border: none;
+
+  background: #FFFFFF;
+  border-radius: 30px;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(46, 46, 46, 0.5);
+
+    @media (max-width: 599px) {
+      font-size: 14px;
+    }
+  }
+
+  transition: width 0.2s ease-in-out;
+}
+
+// логика если есть модификатор
+.header__form.header__form--visible {
+  .header__input {
+    // display: block;
+    padding-left: 25px;
+    padding-right: 70px;
+    width: 340px;
+    transition: width 0.2s ease-in-out;
+
+    @media (max-width: 599px) {
+      padding-left: 15px;
+      padding-right: 70px;
+      width: 225px;
+      font-size: 16px;
+    }
+  }
+
+  .btn-nav-search {
+    background-color: #00C470;
+  }
+
+  .btn-nav-search-icon {
+    stroke: #FFFFFF;
+  }
+
+  .btn-nav-search:hover {
+    background-color: #15D784;
+  }
+}

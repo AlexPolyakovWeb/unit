@@ -1,0 +1,79 @@
+.icon-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: $width;
+  height: $height;
+
+  cursor: pointer;
+}
+
+
+
+
+/* Base stat */
+.icon-menu__item {
+  position: relative;
+  width: $linWidth;
+  height: $lineHeight;
+  border-radius: $borderRadius;
+  background-color: $bgColor;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -($lineHeight * 2);
+    left: 0;
+
+    width: $linWidth;
+    height: $lineHeight;
+    border-radius: $borderRadius;
+    background-color: $bgColor;
+
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: $lineHeight * 2;
+    left: 0;
+
+    width: $linWidth;
+    height: $lineHeight;
+    border-radius: $borderRadius;
+    background-color: $bgColor;
+
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+}
+
+.icon-menu:hover .icon-menu__item {
+  background-color: $HoverBgColor;
+
+  &::before {
+    background-color: $HoverBgColor;
+  }
+
+  &::after {
+    background-color: $HoverBgColor;
+  }
+}
+
+/* Active stat */
+.icon-menu.icon-menu--active .icon-menu__item {
+  background-color: transparent;
+
+  &::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s,
+  }
+}
