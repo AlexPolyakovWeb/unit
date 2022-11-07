@@ -109,11 +109,11 @@
   text-align: center;
 
   & p + p {
-    margin-top: 5px;
+    margin-top: 10px;
   }
 }
 
-.copyright {
+.copyright__text {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.3);
 
@@ -133,3 +133,14 @@
     text-decoration: underline;
   }
 }
+
+.copyright__css-check {
+  margin-top: 30px;
+  display: inline-block;
+
+  @media (max-width: 599px) {
+    margin-top: 20px;
+  }
+}
+
+

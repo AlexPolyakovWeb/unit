@@ -1773,14 +1773,14 @@ legend {
   text-align: center;
 }
 .section-footer__copyright p + p {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
-.copyright {
+.copyright__text {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.3);
 }
-.copyright span {
+.copyright__text span {
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -1792,6 +1792,16 @@ legend {
 }
 .developer__link:hover {
   text-decoration: underline;
+}
+
+.copyright__css-check {
+  margin-top: 30px;
+  display: inline-block;
+}
+@media (max-width: 599px) {
+  .copyright__css-check {
+    margin-top: 20px;
+  }
 }
 
 /*

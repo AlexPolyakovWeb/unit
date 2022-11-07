@@ -100,15 +100,14 @@
       <div class="container">
         <!-- Nav -->
         <nav class="header__navigation navigation">
-          <button class="btn-nav">
+          <div class="btn-nav">
             <div class="icon-menu">
               <div class="icon-menu__item"></div>
             </div>
-            <!-- <img src="./img/main-images/header-images/icon-menu-burger.svg" alt="Button navigation"> -->
-          </button>
+          </div>
 
           <form class="header__form" action="#!">
-            <input class="header__input" type="text" class="header__input" placeholder="Введите текст для поиска">
+            <input class="header__input" type="text" placeholder="Введите текст для поиска">
             <button class="btn-nav-search">
               <svg width="20" height="20">
                 <!-- <use href="#icon-search"></use> -->
@@ -142,7 +141,7 @@
             <input class="input" type="text" placeholder="Ваше имя">
             <input class="input" type="email" placeholder="Email">
             <!-- button -->
-            <a class="form__button-link button" href="#price" type="submit">начать триал</a>
+            <a class="form__button-link button" href="#price">начать триал</a>
           </form>
         </div>
         <!-- /header__headline -->
@@ -548,7 +547,6 @@
         <!-- /slider -->
       </div>
       <!-- /section-slider__slider -->
-      </div>
     </section>
     <!-- /Section slider -->
 
@@ -606,13 +604,21 @@
         <!-- /section-footer__social -->
       </div>
       <!-- /section-footer__row -->
-      <div class="section-footer__copyright">
-        <p class="copyright">Копирайт © 2019 <span>ЮНИТ</span>. Все права защищены.</p>
-        <p class="developer">
+      <div class="section-footer__copyright copyright">
+        <p class="copyright__text">Копирайт © 2019 <span>ЮНИТ</span>. Все права защищены.</p>
+        <p class="copyright__developer">
           <a href="https://alexweb.by/" class="developer__link" target="_blank">Разработка сайта Alexey_Polyakov</a>
         </p>
 
+        <div class="copyright__css-check">
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+              alt="Правильный CSS!" />
+          </a>
+        </div>
+
       </div>
+
     </div>
     <!-- /container -->
   </footer>
