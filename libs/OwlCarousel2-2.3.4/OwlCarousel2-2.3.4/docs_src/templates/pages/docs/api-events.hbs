@@ -9,7 +9,7 @@ tags:
 - API
 ---
 
-{{#markdown }}
+{{markdown }}
 ## Events
 
 > Events are provided by Owl Carousel in strategic code locations. This gives you the ability to listen for any changes and perform your own actions.
@@ -78,19 +78,19 @@ function callback(event) {
 }
 ```
 
-{{#each events}}
+{{each events}}
 ### {{namespace}}
 
-{{#each events}}
+{{each events}}
 #### {{name}}
 
-Type: `{{type}}`<br />{{#isnt callback undefined}}Callback: `{{callback}}`<br/>{{/isnt}}{{#isnt param undefined}}Parameter: `{{param}}`<br/>{{/isnt}}
+Type: `{{type}}`<br />{{isnt callback undefined}}Callback: `{{callback}}`<br/>{{isnt}}{{isnt param undefined}}Parameter: `{{param}}`<br/>{{isnt}}
 
 {{desc}}
 
 ------
-{{/each}}
+{{each}}
 
-{{/each}}
+{{each}}
 
-{{/markdown }}
+{{markdown }}
